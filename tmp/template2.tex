@@ -1,0 +1,154 @@
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvtheme[green]{classic}
+
+%\usepackage{mathpazo}
+%\renewcommand{\sfdefault}{ppl}
+\renewcommand{\sfdefault}{bch}
+% \renewcommand{\familydefault}{bch}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+\usepackage[utf8]{inputenc}               
+
+% adjust the page margins
+\usepackage[scale=0.8, top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+%\usepackage[firstyear=2006,lastyear=2016]{moderntimeline}
+
+
+% autorise tables
+\setlength\arrayrulewidth{.4pt}
+\setlength\tabcolsep{6pt}
+
+%tabular ajusté à la page
+\usepackage{array}
+  \newcolumntype{x}[1]{>{\hspace{0pt}}p{#1}}
+	\newcolumntype{R}[1]{>{\raggedleft\hspace{0pt}}p{#1}}
+
+\usepackage{booktabs}  
+\usepackage{tabularx}                                         
+  \setlength{\doublerulesep}{\arrayrulewidth}  
+
+% personal data
+\firstname{Gaël}
+\familyname{Sola}
+%\title{Resumé title}                          % optional, remove / comment the line if not wanted
+\address{1, rue Danton}{22 000 Saint-Brieuc, France}    % optional, remove / comment the line if not wanted
+\mobile{+33 (0)6 42 85 08 31 (fr)}                     % optional, remove / comment the line if not wanted
+\mobiletwo{+39 38 84 24 22 66 (it)}                     % optional, remove / comment the line if not wanted
+%\phone{+33 (0)2 96 78 29 10}                      % optional, remove / comment the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove / comment the line if not wanted
+\email{gaelsola@hotmail.fr}                          % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                    % optional, remove / comment the line if not wanted
+\extrainfo{skype: gael.sola}            % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                            % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+%\begin{document}
+%---------------------------------------------------------
+\makecvtitle
+
+\vspace{-44pt}
+\section{Education}
+\cventry{2006--2010}{Master of forest science}{AgroParisTech-ENGREF}{France}{}{
+\begin{itemize}%
+	\item \textbf{Sustainable} management of \textbf{tropical} and temperate \textbf{forests}.
+	\item Forest and \textbf{climate change} mitigation (MDP, REDD).
+	\item \textbf{International policy}, \textbf{economy} and \textbf{sociology} applied to \textbf{natural resources} management.
+\end{itemize}
+}
+
+\vspace{-6pt}
+\section{Experience}
+\cventry{2012--2013}{Forest inventory and biomass assessment expert}{UN-REDD programme, Forestry Department (FOMDD), Food and Agriculture Organization of the United Nations \textbf{(FAO)}}{Rome, Italy}{11 months}{
+\begin{itemize}
+\item Enhance the national forest biomass assessment in UN-REDD pilot countries (Vietnam, Zambia, Tanzania) through the support to national teams in developing allometric models by:
+	\begin{itemize}%
+	\item improving training materials (manual, training exercices and presentations).
+	\item organizing and participating to national and regional trainings on biomass and carbon stock assessment in UN-REDD pilot countries.
+	\item Developing new tree allometric equations in countries, tree allometric equation databases, and supporting the efforts on assessment of forest volume, biomass and carbon stocks.
+	\end{itemize}
+\end{itemize}
+}
+
+\cventry{2011--2012}{Research assistant}{Centre de coopération internationale en recherche agronomique pour le développement \textbf{(CIRAD)}}{Republic of the Congo}{12 months}{
+\begin{itemize}
+\item Installation and monitoring of experimental sites, contribution to data analysis and scientific production 
+\end{itemize}
+}
+
+\cventry{2010}{Research assistant}{Center for international forestry research \textbf{(CIFOR)}}{Madagascar}{6 months}{
+\begin{itemize}
+\item Analysis of formal and informal wood supply chain from madagascar east cost. 
+\end{itemize}
+}
+
+\cventry{2009}{Technical assistant}{Groupe energies renouvelables, 
+environnement et solidarités \textbf{(GERES)}}{Cambodia}{6 months}{
+\begin{itemize}
+\item Wood supply and demand analysis on Phnom Chumriey area. 
+\end{itemize}
+}
+
+\cventry{2008}{Research assistant}{\textbf{(CIRAD)}}{Republic of the Congo}{6 months}{
+\begin{itemize}
+\item Study of the nutrient losses by erosion and run off intensity on eucalyptus plantations. 
+\end{itemize}
+}
+
+\vspace{-6pt}
+\section{Languages}
+\vspace{-11pt}
+\begin{tabular}{R{.11\textwidth} x{.15\textwidth} x{.02\textwidth} 
+								R{.11\textwidth} x{.15\textwidth} x{.02\textwidth}
+								R{.11\textwidth} x{.15\textwidth} x{.02\textwidth}}\\
+French & \textsl{Mother tongue} & & English & \textsl{Excellent} & & Italian & \textsl{Beginner}\\
+\end{tabular}
+
+%\cvdoubleitem{French}{Mother tongue}{English}{Excellent}
+%\cvdoubleitem{Italian}{Beginner}{}{}
+\vspace{-6pt}
+\section{Computer skills}
+\vspace{-11pt}
+\begin{tabular}{x{.11\textwidth} x{.43\textwidth} x{.02\textwidth} x{.43\textwidth}}\\
+& \emph{Office suites:} OpenOffice, MS Office, TeX &  & \emph{Statistics:} SAS, R\\%
+& \multicolumn{3}{x{.825\textwidth}}{\emph{Geographic information systems:} QGis, ArcGIS, Erdas}\\
+\end{tabular}
+
+\vspace{-6pt}
+\section{Interests}
+\cvitem{Music}{Volunteering in many music festivals: Jazz In Marciac, Nancy Jazz Pulsation, Art Rock. Long practice of French horn and trombone in many brass and reed bands.}
+\cvitem{Summer camp}{Youth leader then director assistant (team manager) in summer camps}
+\cvitem{Travels}{Lover of world cultures and change of scene (many travels within internships or holidays). Interests in travels close to nature.}
+
+
+\section{Annexe}
+\subsection{Referees}
+\cventry{2012--2013}{FAO}{Rome, Italy}{Supervisor: Dr. Matieu Henry (Forestry department)}{}{}
+
+\cventry{2011--2012}{CIRAD}{Pointe Noire, Republic of the Congo}{Supervisor: Dr Laurent Saint-André (UMR Eco\&Sol)}{}{}
+
+\cventry{2010}{CIFOR}{Madagascar}{Supervisor: Dr Jean-Laurent Pfund}{}{}
+
+\cventry{2009}{GERES}{Cambodia}{Supervisor: Arnaud Guidal  \& Mathieu Van Rijn}{}{}
+
+\cventry{2008}{CIRAD}{Pointe Noire, Republic of the Congo}{Supervisor: Dr Laurent Saint-André (UMR Eco\&Sol)}{}{}
+
+\subsection{Bibliography}
+\nocite{*}
+\bibliographystyle{fbs}
+\bibliography{publications}                  
+
+\clearpage
+
+\end{document}
