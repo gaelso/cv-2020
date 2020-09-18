@@ -11,3 +11,4 @@ Tex packages to install manually (tinytex::tlmgr_install('package_name')):
 - bigfoot
 - fontawesome
 - lipsum
+- marvosym
