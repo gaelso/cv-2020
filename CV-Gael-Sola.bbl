@@ -1,5 +1,13 @@
 \begin{thebibliography}{1}
 
+\bibitem{Sola12}
+\textbf{Sola, G.}, Picard, N., Saint-Andr{\'e}, L., and Henry, M.:
+  \emph{Summary of the manual for building tree volume and biomass allometric
+  equations: from field measurement to prediction}.
+\newblock Food and Agriculture Organization of the United Nations and Centre de
+  Coop{\'e}ration Internationale en Recherche Agronomique pour le
+  D{\'e}veloppement, Rome, Montpellier (2012)
+
 \bibitem{Baldasso12}
 Baldasso, M., Birigazzi, L., Trotta, C., \textbf{Sola, G.}, and Henry, M.:
   Tutorial for Tree Allometric Equation Database Development.
@@ -16,32 +24,17 @@ Epron, D., Nouvellon, Y., Mareschal, L., Moreira, R., Koutika, L., Geneste, B.,
   Two case-studies in contrasting tropical environments.
 \newblock \emph{Forest Ecology and Management}  (2012)
 
-\bibitem{Henry13}
-Henry, M., Bombelli, A., Trotta, C., Alessandrini, A., Birigazzi, L.,
-  \textbf{Sola, G.}, Vieilledent, G., Santenoise, P., Longuetaud, F.,
-  Valentini, R., Picard, N., and Saint-Andr{\'e}, L.: [Globallometree]:
-  International Platform for Tree Allometric Equations to Support Volume,
-  Biomass and Carbon Assessment.
-\newblock \emph{iForest -- Biogeosciences and Forestry}  (forthcoming)
+\bibitem{Henry2013}
+Henry, M., Bombelli, A., Trotta, C., Alessandrini, A., Birigazzi, L., Sola, G.,
+  Vieilledent, G., Santenoise, P., Longuetaud, F., Valentini, R., Picard, N.,
+  and Saint-Andr{\'e}, L.: {GlobAllomeTree: international platform for tree
+  allometric equations to support volume, biomass and carbon assessment}.
+\newblock \emph{{iForest: Biogeosciences and Forestry}} 6, E1--E5 (2013)
 
 \bibitem{Inoguchi13}
 Inoguchi, A., Henry, M., Birigazzi, L., and \textbf{Sola, G.}: Tree allometric
   equation development for estimation of forest above-ground biomass in Viet
   Nam.
 \newblock Tech. Rep. (Part A), UN-REDD Programme, Hanoi, Viet Nam (2013)
-
-\bibitem{Sola12}
-\textbf{Sola, G.}, Picard, N., Saint-Andr{\'e}, L., and Henry, M.:
-  \emph{Summary of the manual for building tree volume and biomass allometric
-  equations: from field measurement to prediction}.
-\newblock Food and Agriculture Organization of the United Nations and Centre de
-  Coop{\'e}ration Internationale en Recherche Agronomique pour le
-  D{\'e}veloppement, Rome, Montpellier (2012)
-
-\bibitem{Standre13}
-Saint-Andr{\'e}, L., Geneste, B., Yoka, J., Kinana, A., \textbf{Sola, G.}, and
-  Mareschal, L.: Biomass equations for Annona senegalensis and Anthocleista
-  schwenfurtii, two common shrub and tree species in Africa.
-\newblock \emph{Biotropica}  (forthcoming)
 
 \end{thebibliography}

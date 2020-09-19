@@ -72,11 +72,13 @@
 \usepackage{tabularx}                                         
   \setlength{\doublerulesep}{\arrayrulewidth}  
 
-%% Remove auitomatic title from bibliography
-\usepackage{etoolbox}
-\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
-
-
+%% Use natbib for citations and renewcommand to remove title for reference section
+\usepackage{natbib} 
+\usepackage[resetlabels,labeled]{multibib} %% to have 2 separate bib for authoring and contributor
+\newcites{Contrib}{Contributions}
+\renewcommand{\bibsection}{}
+\bibliographystyle{fbs} %% Need to have the file in the main dir
+\bibliographystyleContrib{fbs} 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -233,12 +235,18 @@ Vietnamese & \faStar \faStarHalfO \faStarO \faStarO \faStarO & \\
 % REFERENCES
 %----------------------------------------------------------------------------------------
 
-\section{Bibliography}
+\section{Publications}
 
+\subsection{Author, co-author}
+
+\cite{Sola12} %% Need to run one time to genreate the bibliography
 \nocite{*}
-\bibliographystyle{fbs} %% Need to have the ile in the main dir
+
 \bibliography{publications}                  
 
+\subsection{Contributed}
+
+\bibliographyContrib{contrib}
 
 %----------------------------------------------------------------------------------------
 %	COVER LETTER

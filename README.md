@@ -12,3 +12,4 @@ Tex packages to install manually (tinytex::tlmgr_install('package_name')):
 - fontawesome
 - lipsum
 - marvosym
+- multibib
