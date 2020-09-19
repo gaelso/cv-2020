@@ -73,14 +73,16 @@
   \setlength{\doublerulesep}{\arrayrulewidth}  
 
 %% Use natbib for citations and renewcommand to remove title for reference section
-\usepackage{natbib} 
-\usepackage[resetlabels,labeled]{multibib} %% to have 2 separate bib for authoring and contributor
-\newcites{Contrib}{Contributions}
-\renewcommand{\bibsection}{}
-\bibliographystyle{fbs} %% Need to have the file in the main dir
-\bibliographystyleContrib{fbs} 
+%\usepackage{natbib} 
+%\usepackage[resetlabels,labeled]{multibib} %% to have 2 separate bib for authoring and contributor
+%\newcites{Contrib}{Contributions}
+%\renewcommand{\bibsection}{}
+%\bibliographystyle{fbs} %% Need to have the file in the main dir
+%\bibliographystyleContrib{fbs} 
+\usepackage[backend=bibtex, style=authoryear, sorting=ynt, maxbibnames=99]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+\addbibresource{publications.bib}
 
-\usepackage[utf8]{inputenc}
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -239,19 +241,26 @@ Vietnamese & \faStar \faStarHalfO \faStarO \faStarO \faStarO & \\
 
 \section{Publications}
 
+\makeatletter
+\RenewDocumentCommand{\subsection}{sm}{%
+  \par\addvspace{1ex}%
+  \phantomsection{}% reset the anchor for hyperrefs
+  \addcontentsline{toc}{subsection}{#2}%
+  \strut\subsectionstyle{#2}%
+  \par\nobreak\addvspace{.5ex}\@afterheading}% to avoid a pagebreak after the heading
+\makeatother
+
+
 \subsection{Author, co-author}
 
 
 \nocite{Sola12} %% Need to run one time to genreate the bibliography
 \nocite{*}
-\bibliography{publications}                  
-
+\printbibliography[heading=none, notkeyword=contrib]
 
 \subsection{Contributed}
 
-\citeContrib{ContribSola12}
-\nociteContrib{*}
-\bibliographyContrib{contrib}
+\printbibliography[heading=none, keyword=contrib]           
 
 %----------------------------------------------------------------------------------------
 %	COVER LETTER
