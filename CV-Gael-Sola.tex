@@ -72,7 +72,10 @@
 \usepackage{tabularx}                                         
   \setlength{\doublerulesep}{\arrayrulewidth}  
 
-\usepackage{natbib}
+%% Remove auitomatic title from bibliography
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -233,7 +236,7 @@ Vietnamese & \faStar \faStarHalfO \faStarO \faStarO \faStarO & \\
 \section{Bibliography}
 
 \nocite{*}
-\bibliographystyle{fbs}
+\bibliographystyle{fbs} %% Need to have the ile in the main dir
 \bibliography{publications}                  
 
 
