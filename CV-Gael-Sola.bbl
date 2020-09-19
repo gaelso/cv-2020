@@ -1,13 +1,5 @@
 \begin{thebibliography}{1}
 
-\bibitem{Sola12}
-\textbf{Sola, G.}, Picard, N., Saint-Andr{\'e}, L., and Henry, M.:
-  \emph{Summary of the manual for building tree volume and biomass allometric
-  equations: from field measurement to prediction}.
-\newblock Food and Agriculture Organization of the United Nations and Centre de
-  Coop{\'e}ration Internationale en Recherche Agronomique pour le
-  D{\'e}veloppement, Rome, Montpellier (2012)
-
 \bibitem{Baldasso12}
 Baldasso, M., Birigazzi, L., Trotta, C., \textbf{Sola, G.}, and Henry, M.:
   Tutorial for Tree Allometric Equation Database Development.
@@ -36,5 +28,13 @@ Inoguchi, A., Henry, M., Birigazzi, L., and \textbf{Sola, G.}: Tree allometric
   equation development for estimation of forest above-ground biomass in Viet
   Nam.
 \newblock Tech. Rep. (Part A), UN-REDD Programme, Hanoi, Viet Nam (2013)
+
+\bibitem{Sola12}
+\textbf{Sola, G.}, Picard, N., Saint-Andr{\'e}, L., and Henry, M.:
+  \emph{Summary of the manual for building tree volume and biomass allometric
+  equations: from field measurement to prediction}.
+\newblock Food and Agriculture Organization of the United Nations and Centre de
+  Coop{\'e}ration Internationale en Recherche Agronomique pour le
+  D{\'e}veloppement, Rome, Montpellier (2012)
 
 \end{thebibliography}

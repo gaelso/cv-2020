@@ -79,6 +79,8 @@
 \renewcommand{\bibsection}{}
 \bibliographystyle{fbs} %% Need to have the file in the main dir
 \bibliographystyleContrib{fbs} 
+
+\usepackage[utf8]{inputenc}
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -239,13 +241,16 @@ Vietnamese & \faStar \faStarHalfO \faStarO \faStarO \faStarO & \\
 
 \subsection{Author, co-author}
 
-\cite{Sola12} %% Need to run one time to genreate the bibliography
-\nocite{*}
 
+\nocite{Sola12} %% Need to run one time to genreate the bibliography
+\nocite{*}
 \bibliography{publications}                  
+
 
 \subsection{Contributed}
 
+\citeContrib{ContribSola12}
+\nociteContrib{*}
 \bibliographyContrib{contrib}
 
 %----------------------------------------------------------------------------------------
