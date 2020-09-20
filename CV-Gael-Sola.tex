@@ -72,14 +72,9 @@
 \usepackage{tabularx}                                         
   \setlength{\doublerulesep}{\arrayrulewidth}  
 
-%% Use natbib for citations and renewcommand to remove title for reference section
-%\usepackage{natbib} 
-%\usepackage[resetlabels,labeled]{multibib} %% to have 2 separate bib for authoring and contributor
-%\newcites{Contrib}{Contributions}
-%\renewcommand{\bibsection}{}
-%\bibliographystyle{fbs} %% Need to have the file in the main dir
-%\bibliographystyleContrib{fbs} 
-\usepackage[backend=bibtex, style=authoryear, sorting=ynt, maxbibnames=99]{biblatex}
+%% biblatex setup for 2 references by keyword (contrib) and no section title 
+%\usepackage[backend=bibtex, style=authoryear, sorting=ynt, maxbibnames=99]{biblatex} %% all authors
+\usepackage[backend=bibtex, style=authoryear, sorting=nyt]{biblatex} %% sorting by 'nyt' or 'ydnt'
 \DeclareLanguageMapping{english}{english-apa}
 \addbibresource{publications.bib}
 
