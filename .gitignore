@@ -12,3 +12,7 @@
 *.run.xml
 *.bcf
 *blx.bib
+
+## Directories
+tmp/
+publications/
