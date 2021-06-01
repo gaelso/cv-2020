@@ -13,3 +13,4 @@ Tex packages to install manually (tinytex::tlmgr_install('package_name')):
 - lipsum
 - marvosym
 - biblatex
+- charter
